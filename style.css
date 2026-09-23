@@ -26,3 +26,28 @@ ul {
 ol {
     padding-left: 100px;
 }
+
+
+
+section#liste table {
+    border-collapse: separate;
+    width: 400px;
+    margin: 50px;
+}
+
+section#liste td{
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {background-color: #F2F2F2;}
+
+section#liste td:hover{
+    background-color: #DDDDDD;
+    cursor: pointer;
+}
+section#liste th{
+    padding: 12px, 8px, 20px, 8px;
+    text-align: left;
+    background-color: #FF715B;
+    color: #FFFFFF;
+}
