@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <meta charset="utf-8"/>
+        <title>Présentation des journaux lumineux</title>
+    </head>
+    <body>
+        
+        <section id="message">
+            <h1>Envoi d'un message</h1>
+            <form action="rest.php" method="POST">
+                <label for="Afficheur">Sélectionner un afficheur :</label>
+                <select id="Afficheur" name="Afficheur">
+                    <option value="CP A">CP A</option>
+                    <option value="CP B">CP B</option>
+                    <option value="CE1 A">CE1 A</option>
+                    <option value="CE1 B">CE1 B</option>
+                    <option value="CE2 A">CE2 A</option>
+                    <option value="CE2 B">CE2 B</option>
+                    <option value="CM1 A">CM1 A</option>
+                    <option value="CM1 B">CM1 B</option>
+                    <option value="CM2 A">CM2 A</option>
+                    <option value="CM2 B">CM2 B</option>
+                </select>
+
+            </form>
+
+            <label for="pseudo-select">Votre pseudo :</label>
+            <input type="text" id="pseudo-select" name="pseudo">
+
+            <input type="submit" value="Envoyer">
+
+        </section>
+    </body>
+</html>
