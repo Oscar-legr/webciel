@@ -81,12 +81,12 @@ section#message select, section#message input{
     border-radius:5px;
     padding-top:15px;
     padding-bottom:15px;
-    padding-left:10px;
-    padding-right:10px;
+    margin-left:10px;
+    margin-right:10px;
 }
-section#message label [type=submit], section#message input [type=submit]{
+section#message label, section#message input[type=submit]{
     margin-top: 30px;
 }
-section#message input [type=submit]{
+section#message input[type=submit]{
     background-color:#FF715B;
 }
