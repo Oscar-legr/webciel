@@ -11,8 +11,8 @@
             <h1>Envoi d'un message</h1>
             <form action="rest.php" method="POST">
                 <label for="Afficheur">Sélectionner un afficheur :</label>
-                <select id="Afficheur" name="Afficheur">
-                    <option value="CP A">CP A</option>
+                <select id="Afficheur" name="ip_journal">
+                    <option value="172.20.21.158">CP A</option>
                     <option value="CP B">CP B</option>
                     <option value="CE1 A">CE1 A</option>
                     <option value="CE1 B">CE1 B</option>
@@ -23,10 +23,47 @@
                     <option value="CM2 A">CM2 A</option>
                     <option value="CM2 B">CM2 B</option>
                 </select>
+                
+                <label for="Afficheur">Gestion de l'effet d'apparition :</label>
+                <select id="select-effetapparition" name="effetapparition">
+                    <option value="FE">Défault</option>
+                    <option value="FL">Neige</option>
+                    <option value="FA">Immédiat</option>
+                    <option value="FI">Bas vers le Haut</option>
+                    <option value="FP">Random</option>
+                </select>
+                
+            <label for="Afficheur">Gestion de l'Effet d'Affichage :</label>
+            <select id="select-effetaffichage" name="effetaffichage">
+                <option value="MA">Défault</option>
+                <option value="MA">Normal</option>
+                <option value="MB">CLignotant</option>
+                <option value="MC">Son 1</option>
+                <option value="MD">Son 2</option>
+            </select>
+        
+            <label for="Afficheur">Durée d'affichage :</label>
+            <select id="select-dureeaffichage" name="dureeaffichage">
+                <option value="WC">Défault</option>
+                <option value="WC">2s</option>
+                <option value="WF">5s</option>
+                <option value="WK">10s</option>
+                <option value="WZ">25s</option>
+            </select>
+            
+            <label for="Afficheur">Effet de disparition :</label>
+            <select id="select-effetdisparition" name="effetdisparition">
+                <option value="FE">Défault</option>
+                <option value="FA">Immédiat</option>
+                <option value="FB">Xopen</option>
+                <option value="FE">Gauche</option>
+                <option value="FF">Droite</option>
+            </select>
+            
                 <label for="pseudo-select">Votre pseudo :</label>
-            <input type="text" id="pseudo-select" name="pseudo">
+            <input type="text" id="pseudo-select" name="texte">
 
-            <input type="submit" value="Envoyer">
+            <input type="submit" value="Envoyer" name="submit_SW06"/>
 
             </form>
 
